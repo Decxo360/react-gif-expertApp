@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-export const AddCategory = ({setCategory}) => {
+export const AddCategory = ({handleAdd}) => {
 
   const [inputValue, setInputValue] = useState('')
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
+  const handleInputChange = ({target}) => {
+    setInputValue(target.value);
   }
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (inputValue.trim().length>2) {
-      setCategory(category=>[inputValue,...category]);
-      setInputValue("")
-    }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (inputValue.trim().length <= 1) return; 
+    // setCategory(category => [inputValue,...category]);
+    setInputValue("")
+    handleAdd(inputValue.trim())
   }
 
   return (
@@ -28,6 +28,6 @@ export const AddCategory = ({setCategory}) => {
   )
 }
 
-AddCategory.propTypes = {
-  setCategory: PropTypes.func.isRequired
-}
+// AddCategory.propTypes = {
+//   setCategory: PropTypes.func.isRequired
+// }

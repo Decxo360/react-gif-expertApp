@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trabajando en el componente GifGrid.js Debe de mostrar items cuando se cargan imagenes 1`] = `
+<Fragment>
+  <h3>
+    samurai x
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="123a"
+      key="123a"
+      title="cualquiercosa"
+      url="https://yuutu.com"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Trabajando en el componente GifGrid.js Debe de mostrarse correctamente 1`] = `
+<Fragment>
+  <h3>
+    samurai x
+  </h3>
+  <p>
+    Loading...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;

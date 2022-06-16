@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Se esta trabajando en GifGridItem Tiene que imprimir el componente GifgridItem 1`] = `
+<div
+  className="card animate__animated animate__bounce"
+>
+  <img
+    alt="Este es el titulo"
+    src="https://www.youtube.com"
+  />
+  <h3>
+    Este es el titulo
+  </h3>
+</div>
+`;
